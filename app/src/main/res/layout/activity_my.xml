@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center">
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:clickable="true"
+                    android:src="@drawable/panda"
+                    app:riv_border_color="@color/xui_config_color_gray_6"
+                    app:riv_border_width="1px"
+                    app:riv_is_circle="true"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_4"
+                    app:riv_selected_border_width="1px"
+                    app:riv_selected_mask_color="@color/xui_config_color_gray_8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/usrmsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\nXXX\nid\n单位：XXX"
+                        android:textSize="24dp">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="36dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userManage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/people"
+                    android:drawableRight="@drawable/in"
+                    android:text="\n\t\t人员管理"
+                    android:textSize="24dp"></TextView>
+
+                <TextView
+                    android:id="@+id/companymanage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/department"
+                    android:drawableRight="@drawable/in"
+                    android:text="\n\t\t单位管理"
+                    android:textSize="24dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tx_MyInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/suo"
+                    android:drawableRight="@drawable/in"
+                    android:text="\n\t\t个人资料"
+                    android:textSize="24dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tx_aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/aboutus"
+                    android:drawableRight="@drawable/in"
+                    android:text="\n\t\t关于我们"
+                    android:textSize="24dp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注销登陆"
+                android:textSize="24dp"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/main" />
+    </LinearLayout>
+
+
+</LinearLayout>

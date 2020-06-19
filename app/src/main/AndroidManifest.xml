@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.com.example.goods">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.AddOutActivity"></activity>
+        <activity android:name=".activity.OutDetailsActivity" />
+        <activity android:name=".activity.OutActivity" />
+        <activity android:name=".activity.AddInActivity" />
+        <activity android:name=".activity.InDetailsActivity" />
+        <activity android:name=".activity.InActivity" />
+        <activity android:name=".activity.InventoryActivity" />
+        <activity android:name=".activity.AddGoodsDataActivity" />
+        <activity android:name=".activity.GoodsDataUpdateActivity" />
+        <activity android:name=".activity.GoodsDataActivity" />
+        <activity android:name=".activity.AddTypeActivity" />
+        <activity android:name=".activity.TypeUpdateActivity" />
+        <activity android:name=".activity.TypeActivity" />
+        <activity android:name=".activity.addCompanyActivity" />
+        <activity android:name=".activity.CompanyUpdateActivity" />
+        <activity android:name=".activity.CompanyManageActivity" />
+        <activity android:name=".activity.AdddePartmentActivity" />
+        <activity android:name=".activity.DepartmentUpdateActivity" />
+        <activity android:name=".activity.DepartmentManageActivity" />
+        <activity android:name=".activity.UserUpdateActivity" />
+        <activity android:name=".activity.UserManageActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.MyInfoActivity" />
+        <activity android:name=".activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.MyActivity" />
+        <activity android:name=".activity.CheckActivity" />
+        <activity android:name=".activity.LoginActivity" />
+    </application>
+
+</manifest>
